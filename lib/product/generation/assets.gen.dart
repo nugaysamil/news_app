@@ -87,11 +87,36 @@ class $AssetsIconsGen {
       ];
 }
 
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
+
+  /// File path: assets/images/base_image.png
+  AssetGenImage get baseImage =>
+      const AssetGenImage('assets/images/base_image.png');
+
+  /// File path: assets/images/splash_screen1.png
+  AssetGenImage get splashScreen1 =>
+      const AssetGenImage('assets/images/splash_screen1.png');
+
+  /// File path: assets/images/splash_screen2.png
+  AssetGenImage get splashScreen2 =>
+      const AssetGenImage('assets/images/splash_screen2.png');
+
+  /// File path: assets/images/splash_scren3.png
+  AssetGenImage get splashScren3 =>
+      const AssetGenImage('assets/images/splash_scren3.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values =>
+      [baseImage, splashScreen1, splashScreen2, splashScren3];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsColorGen color = $AssetsColorGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
 class AssetGenImage {
