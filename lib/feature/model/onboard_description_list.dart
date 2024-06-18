@@ -1,5 +1,5 @@
 import 'package:news_app/product/generation/assets.gen.dart';
-import 'package:news_app/product/utility/constans/string_constant.dart';
+import 'package:news_app/product/utility/constant/string_constant.dart';
 
 class Onboard {
   final String imagePath;
@@ -30,7 +30,7 @@ class OnboardScreenList {
       buttonText: StringConstant.next,
     ),
     Onboard(
-      imagePath: Assets.images.splashScren3.path,
+      imagePath: Assets.images.splashScreen3.path,
       title: StringConstant.enrichYour,
       description: StringConstant.theLast,
       buttonText: StringConstant.getStarted,

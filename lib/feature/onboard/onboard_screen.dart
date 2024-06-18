@@ -5,7 +5,7 @@ import 'package:news_app/feature/login/login_screen.dart';
 
 import 'package:news_app/feature/model/onboard_description_list.dart';
 import 'package:news_app/product/generation/colors.gen.dart';
-import 'package:news_app/widget/custom_appbar.dart';
+import 'package:news_app/product/widget/custom/custom_appbar.dart';
 
 part 'mixin/onboard_screen_mixin.dart';
 part 'widget/onboard_screen_content.dart';
@@ -26,11 +26,7 @@ class _OnboardScreenState extends State<OnboardScreen>
       body: PageView.builder(
         itemCount: onboardList.length,
         controller: pageController,
-        onPageChanged: (value) {
-          setState(() {
-            pageIndex = value;
-          });
-        },
+        onPageChanged: (value) => updatePageIndex(value),
         itemBuilder: (context, index) {
           return _OnboardContent(
             imagePath: onboardList[index].imagePath,

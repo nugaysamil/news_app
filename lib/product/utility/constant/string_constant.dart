@@ -25,4 +25,12 @@ final class StringConstant {
   static final forgotPassword = 'Forgot Password?';
   static final login = 'Login';
   static final rememberMe = 'Remember Me';
+  static final orSignInWith = 'Or Sign In With';
+  static final dontHaveAccount = "Don't have an account? ";
+
+  static final signUp = 'Sign Up';
+
+  static final facebook = 'Facebook';
+
+  static final google = 'Google';
 }

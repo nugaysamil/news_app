@@ -102,13 +102,13 @@ class $AssetsImagesGen {
   AssetGenImage get splashScreen2 =>
       const AssetGenImage('assets/images/splash_screen2.png');
 
-  /// File path: assets/images/splash_scren3.png
-  AssetGenImage get splashScren3 =>
-      const AssetGenImage('assets/images/splash_scren3.png');
+  /// File path: assets/images/splash_screen3.png
+  AssetGenImage get splashScreen3 =>
+      const AssetGenImage('assets/images/splash_screen3.png');
 
   /// List of all assets
   List<AssetGenImage> get values =>
-      [baseImage, splashScreen1, splashScreen2, splashScren3];
+      [baseImage, splashScreen1, splashScreen2, splashScreen3];
 }
 
 class Assets {

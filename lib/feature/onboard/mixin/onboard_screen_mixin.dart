@@ -19,4 +19,10 @@ mixin OnBoardingScreenMixin on State<OnboardScreen> {
     pageController.dispose();
     super.dispose();
   }
+
+  void updatePageIndex(int value) {
+    setState(() {
+      pageIndex = value;
+    });
+  }
 }

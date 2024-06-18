@@ -5,7 +5,7 @@ class AppStyles {
   AppStyles._();
 
   static TextStyle latoTextStyle({
-    double fontSize = 10,
+    double fontSize = 16,
     FontWeight fontWeight = FontWeight.w400,
   }) {
     return GoogleFonts.lato(
