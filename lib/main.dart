@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/feature/login/login_screen.dart';
+import 'package:news_app/product/init/application_init.dart';
 
-void main() {
+Future<void> main() async {
+  await ApplicationInitialize.init();
   runApp(const MyApp());
 }
 

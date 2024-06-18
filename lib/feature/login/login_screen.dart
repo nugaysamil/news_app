@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:news_app/feature/view_model/login/login_view_model.dart';
 import 'package:news_app/product/generation/assets.gen.dart';
 import 'package:news_app/product/generation/colors.gen.dart';
 import 'package:news_app/product/init/theme/app_font_style.dart';
@@ -98,7 +99,7 @@ class _FacebookAndGoogle extends StatelessWidget {
             text: StringConstant.google,
             iconPath: Assets.icons.google.path,
             backgroundColor: Colors.orange[50],
-            onPressed: () {},
+            onPressed: () => LoginViewModel.signInWithGoogle(context),
           ),
         ],
       ),

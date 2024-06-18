@@ -33,4 +33,8 @@ final class StringConstant {
   static final facebook = 'Facebook';
 
   static final google = 'Google';
+
+  static final errorDuring = 'Error during Google sign-in';
+
+  static final abortedByUser = 'Google sign-in aborted by user';
 }
