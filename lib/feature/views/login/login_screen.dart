@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/feature/view_model/login/login_view_model.dart';
+import 'package:news_app/feature/views/home/home_screen.dart';
 import 'package:news_app/product/generation/assets.gen.dart';
 import 'package:news_app/product/generation/colors.gen.dart';
 import 'package:news_app/product/init/theme/app_font_style.dart';

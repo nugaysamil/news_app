@@ -10,7 +10,7 @@ class AppStyles {
   }) {
     return GoogleFonts.lato(
       fontSize: fontSize,
-      fontWeight: fontWeight,
+      fontWeight: FontWeight.bold,
       color: Colors.grey[700],
       height: 1.5,
     );

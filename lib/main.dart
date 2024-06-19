@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/feature/views/login/login_screen.dart';
+import 'package:news_app/feature/views/home/home_screen.dart';
 import 'package:news_app/product/init/application_init.dart';
 
 Future<void> main() async {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }

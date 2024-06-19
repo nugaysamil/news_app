@@ -1,31 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+import 'package:news_app/feature/model/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:news_app/product/utility/constant/string_constant.dart';
-import 'package:news_app/product/utility/error_handler.dart';
 
-final class LoginViewModel {
-  static Future<UserCredential?> signInWithGoogle(BuildContext context) async {
-    try {
-      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+class LoginViewModel {
+  final AuthService _authService = AuthService();
 
-      if (googleUser == null) {
-        ErrorHandler.showError(context, StringConstant.abortedByUser);
-        return null;
-      }
+  Future<bool> signIn(BuildContext context) async {
+    return await _authService.signInWithGoogle(context) != null;
+  }
 
-      final GoogleSignInAuthentication googleAuth =
-          await googleUser.authentication;
+  User? getCurrentUser() {
+    return _authService.getCurrentUser();
+  }
 
-      final AuthCredential credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken,
-        idToken: googleAuth.idToken,
-      );
-
-      return await FirebaseAuth.instance.signInWithCredential(credential);
-    } catch (e) {
-      ErrorHandler.showError(context, StringConstant.errorDuring);
-      return null;
-    }
+  Future<void> signOut() async {
+    await _authService.signOut();
+  }
+  String? getProfilePhoto() {
+    return _authService.getCurrentUser()?.photoURL;
   }
 }
+

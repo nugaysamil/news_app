@@ -25,9 +25,6 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Group 25.png
   AssetGenImage get group25 => const AssetGenImage('assets/icons/Group 25.png');
 
-  /// File path: assets/icons/Vector-4.png
-  AssetGenImage get vector4 => const AssetGenImage('assets/icons/Vector-4.png');
-
   /// File path: assets/icons/back.png
   AssetGenImage get back => const AssetGenImage('assets/icons/back.png');
 
@@ -37,6 +34,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/computer_person.png
   AssetGenImage get computerPerson =>
       const AssetGenImage('assets/icons/computer_person.png');
+
+  /// File path: assets/icons/explore.png
+  AssetGenImage get explore => const AssetGenImage('assets/icons/explore.png');
 
   /// File path: assets/icons/facebook.png
   AssetGenImage get facebook =>
@@ -58,12 +58,11 @@ class $AssetsIconsGen {
   /// File path: assets/icons/pencil.png
   AssetGenImage get pencil => const AssetGenImage('assets/icons/pencil.png');
 
-  /// File path: assets/icons/place_pointer.png
-  AssetGenImage get placePointer =>
-      const AssetGenImage('assets/icons/place_pointer.png');
-
   /// File path: assets/icons/profile.png
   AssetGenImage get profile => const AssetGenImage('assets/icons/profile.png');
+
+  /// File path: assets/icons/saved.png
+  AssetGenImage get saved => const AssetGenImage('assets/icons/saved.png');
 
   /// File path: assets/icons/search.png
   AssetGenImage get search => const AssetGenImage('assets/icons/search.png');
@@ -71,18 +70,18 @@ class $AssetsIconsGen {
   /// List of all assets
   List<AssetGenImage> get values => [
         group25,
-        vector4,
         back,
         bell,
         computerPerson,
+        explore,
         facebook,
         google,
         home,
         key,
         notification,
         pencil,
-        placePointer,
         profile,
+        saved,
         search
       ];
 }
