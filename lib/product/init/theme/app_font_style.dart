@@ -26,4 +26,15 @@ class AppStyles {
       height: 1.5,
     );
   }
+  static TextStyle latoWhiteTextStyle({
+    double fontSize = 16,
+    FontWeight fontWeight = FontWeight.bold,
+  }) {
+    return GoogleFonts.lato(
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      color: Colors.white,
+      height: 1.5,
+    );
+  }
 }

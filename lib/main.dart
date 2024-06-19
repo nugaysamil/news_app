@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:news_app/feature/views/home/home_screen.dart';
 import 'package:news_app/product/init/application_init.dart';
 
 Future<void> main() async {
   await ApplicationInitialize.init();
-  runApp(const MyApp());
+  runApp(ProviderScope(child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
