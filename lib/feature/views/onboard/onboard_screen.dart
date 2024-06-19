@@ -1,9 +1,9 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:news_app/feature/login/login_screen.dart';
+import 'package:news_app/feature/views/login/login_screen.dart';
 
-import 'package:news_app/feature/model/onboard_description_list.dart';
+import 'package:news_app/feature/model/onboard/onboard_description_list.dart';
 import 'package:news_app/product/generation/colors.gen.dart';
 import 'package:news_app/product/widget/custom/custom_appbar.dart';
 

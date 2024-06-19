@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/feature/login/login_screen.dart';
+import 'package:news_app/feature/views/login/login_screen.dart';
 import 'package:news_app/product/init/application_init.dart';
 
 Future<void> main() async {
