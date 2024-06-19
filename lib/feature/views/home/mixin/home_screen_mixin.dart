@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/feature/views/home/home_screen.dart';
 import 'package:news_app/product/generation/assets.gen.dart';
+import 'package:news_app/product/generation/colors.gen.dart';
+import 'package:news_app/product/model/article_model.dart';
 import 'package:news_app/product/utility/constant/string_constant.dart';
 
 mixin HomeScreenMixin on State<HomeScreen> {
@@ -47,4 +49,6 @@ mixin HomeScreenMixin on State<HomeScreen> {
           label: StringConstant.profile,
         ),
       ];
+
+  
 }

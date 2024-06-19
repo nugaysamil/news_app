@@ -34,7 +34,6 @@ class AppStyles {
       fontSize: fontSize,
       fontWeight: fontWeight,
       color: Colors.white,
-      height: 1.5,
     );
   }
 }

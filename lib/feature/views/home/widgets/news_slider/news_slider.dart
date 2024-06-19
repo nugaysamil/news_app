@@ -3,11 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/feature/view_model/news/news_view_model.dart';
+import 'package:news_app/feature/views/home/widgets/tabbar/home_tabbar.dart';
 import 'package:news_app/feature/views/home/widgets/news_slider/mixin/news_slider_mixin.dart';
 import 'package:news_app/product/init/theme/app_font_style.dart';
 import 'package:news_app/product/model/article_model.dart';
+import 'package:news_app/product/utility/constant/string_constant.dart';
 
 part 'card/news_card.dart';
+part 'widgets/article_list_item.dart';
 
 class NewsView extends ConsumerStatefulWidget {
   @override
@@ -49,6 +52,22 @@ class _NewsViewState extends ConsumerState<NewsView> with NewsSliderMixin {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: buildPageIndicators(validArticles, _current),
+              ),
+              HomeTabBar(),
+              Expanded(
+                child: ListView.separated(
+                  itemCount: validArticles.length,
+                  separatorBuilder: (context, index) => Divider(
+                    indent: 20,
+                    endIndent: 20,
+                    thickness: 0,
+                    color: Colors.black87,
+                  ),
+                  itemBuilder: (context, index) {
+                    final article = validArticles[index];
+                    return ArticleListItem(article: article);
+                  },
+                ),
               ),
             ],
           );

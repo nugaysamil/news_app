@@ -6,7 +6,6 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 final newsServiceProvider = Provider<NewsService>((ref) {
   return NewsService();
 });
-
 class NewsService {
   final Dio _dio = Dio();
 
@@ -19,7 +18,6 @@ class NewsService {
     });
 
     if (response.statusCode == 200) {
-      print(response.data);
       return Product.fromJson(response.data);
     } else {
       throw Exception('Failed to load news');

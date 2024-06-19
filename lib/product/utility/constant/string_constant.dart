@@ -35,4 +35,12 @@ final class StringConstant {
   static final goodMorning = 'Good Morning';
   static final breakingNews = 'Breaking News';
   static final seeMore = 'See More';
+  static final travel = 'Travel';
+  static final feeds = 'Feeds';
+  static final popular = 'Popular';
+  static final following = 'Following';
+
+
 }
+
+
