@@ -1,4 +1,4 @@
-part of '../news_slider.dart';
+part of '../../../news_slider.dart';
 
 class ArticleListItem extends StatelessWidget {
   final Article article;

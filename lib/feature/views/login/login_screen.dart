@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             //FormField
             EmailFormField(),
-            //Password 
+            //Password
             _TextFormFieldText(
               label: StringConstant.password,
             ),
@@ -55,12 +55,16 @@ class _LoginScreenState extends State<LoginScreen> {
             PasswordFormField(),
             _ForgotAndRemember(),
             SizedBox(height: 20),
+            //LoginButton
             _LoginButton(),
             SizedBox(height: 20),
+            //OrSignInWithText
             _OrSignInWith(),
             SizedBox(height: 20),
+            //FacebookAndGoogleButton
             _FacebookAndGoogle(),
             SizedBox(height: 20),
+            //DontHaveAccountText
             _DontHaveAccount(),
           ],
         ),

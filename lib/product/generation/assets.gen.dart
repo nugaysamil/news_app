@@ -67,6 +67,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/search.png
   AssetGenImage get search => const AssetGenImage('assets/icons/search.png');
 
+  /// File path: assets/icons/vector.png
+  AssetGenImage get vector => const AssetGenImage('assets/icons/vector.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
         group25,
@@ -82,7 +85,8 @@ class $AssetsIconsGen {
         pencil,
         profile,
         saved,
-        search
+        search,
+        vector
       ];
 }
 

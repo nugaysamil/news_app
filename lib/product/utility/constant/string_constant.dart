@@ -39,6 +39,8 @@ final class StringConstant {
   static final feeds = 'Feeds';
   static final popular = 'Popular';
   static final following = 'Following';
+  static final searchTopic = 'Search "Topic"';
+
 
 
 }

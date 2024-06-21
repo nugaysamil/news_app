@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/feature/views/home/mixin/home_screen_mixin.dart';
 import 'package:news_app/feature/views/home/widgets/appbar/home_appbar.dart';
-import 'package:news_app/feature/views/home/widgets/news_slider/news_slider.dart';
+import 'package:news_app/feature/views/home/news_slider.dart';
 import 'package:news_app/feature/views/home/widgets/news_slider/widgets/breaking_see_more.dart';
 import 'package:news_app/product/generation/colors.gen.dart';
 

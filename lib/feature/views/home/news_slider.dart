@@ -9,8 +9,8 @@ import 'package:news_app/product/init/theme/app_font_style.dart';
 import 'package:news_app/product/model/article_model.dart';
 import 'package:news_app/product/utility/constant/string_constant.dart';
 
-part 'card/news_card.dart';
-part 'widgets/article_list_item.dart';
+part 'widgets/news_slider/card/news_card.dart';
+part 'widgets/news_slider/widgets/article_list_item.dart';
 
 class NewsView extends ConsumerStatefulWidget {
   @override
