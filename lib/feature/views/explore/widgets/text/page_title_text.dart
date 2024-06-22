@@ -19,7 +19,7 @@ class PageTitle extends StatelessWidget {
             textTitle,
             style: AppStyles.latoTextStyle(
               fontSize: 16,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.bold
             ),
           ),
           TextButton(
@@ -28,7 +28,7 @@ class PageTitle extends StatelessWidget {
               StringConstant.seeMore,
               style: GoogleFonts.lato(
                 color: Colors.blue,
-                fontSize: 12,
+                fontSize: 12
               ),
             ),
           ),

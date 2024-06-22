@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/product/generation/assets.gen.dart';
 import 'package:news_app/product/utility/constant/string_constant.dart';
 
-class ExploreAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const ExploreAppBar({
+class ExploreAndSavedAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const ExploreAndSavedAppBar({
     super.key,
     required this.userPhoto,
   });

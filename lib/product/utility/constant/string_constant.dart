@@ -42,6 +42,8 @@ final class StringConstant {
   static final searchTopic = 'Search "Topic"';
   static final trendingIndonesia = 'Trending in Indonesia';
   static final trendingWorld = 'Trending in Worlds';
+  static final savedPages = 'Saved Pages';
+
 
 
 }

@@ -1,7 +1,8 @@
+
 import 'package:news_app/product/model/article_model.dart';
 
-mixin ExploreScreenMixin {
-  List<Article> filterValidArticles(List<Article>? articles) {
+class ArticleFilter {
+  static List<Article> filterValidArticles(List<Article>? articles) {
     return articles
             ?.where((article) {
               return article.urlToImage != null &&

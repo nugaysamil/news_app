@@ -67,6 +67,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/search.png
   AssetGenImage get search => const AssetGenImage('assets/icons/search.png');
 
+  /// File path: assets/icons/straight_line.png
+  AssetGenImage get straightLine =>
+      const AssetGenImage('assets/icons/straight_line.png');
+
   /// File path: assets/icons/vector.png
   AssetGenImage get vector => const AssetGenImage('assets/icons/vector.png');
 
@@ -86,6 +90,7 @@ class $AssetsIconsGen {
         profile,
         saved,
         search,
+        straightLine,
         vector
       ];
 }

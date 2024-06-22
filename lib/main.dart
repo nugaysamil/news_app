@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:news_app/feature/views/home/home_screen.dart';
+import 'package:news_app/feature/views/onboard/onboard_screen.dart';
 import 'package:news_app/product/init/application_init.dart';
 
 Future<void> main() async {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: OnboardScreen(),
     );
   }
 }
