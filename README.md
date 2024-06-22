@@ -20,7 +20,6 @@ The project uses the following packages:
 
 - **equatable:** For simplifying object comparisons.
 - **dio:** For network requests and API interactions.
-- **cached_network_image:** For efficient image loading and caching.
 - **json_annotation & json_serializable:** For JSON serialization and deserialization.
 - **google_fonts:** For custom fonts.
 - **carousel_slider_plus:** For creating image sliders.
