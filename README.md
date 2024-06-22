@@ -3,7 +3,7 @@
 News App is a Flutter project designed to provide users with the latest news headlines. The application fetches news data from the NewsAPI and displays it in a clean, user-friendly interface. Users can browse through different news categories and read detailed articles.
 
 # Figma Link: 
-- **https://www.figma.com/community/file/1365109967017520913/portofolio-mobile-magazine
+- https://www.figma.com/community/file/1365109967017520913/portofolio-mobile-magazine
 
 ## Features
 
