@@ -40,7 +40,8 @@ final class StringConstant {
   static final popular = 'Popular';
   static final following = 'Following';
   static final searchTopic = 'Search "Topic"';
-
+  static final trendingIndonesia = 'Trending in Indonesia';
+  static final trendingWorld = 'Trending in Worlds';
 
 
 }
