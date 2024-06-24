@@ -16,8 +16,12 @@ class LoginViewModel {
   Future<void> signOut() async {
     await _authService.signOut();
   }
+
   String? getProfilePhoto() {
     return _authService.getCurrentUser()?.photoURL;
   }
-}
 
+  String? getUserEmail() {
+    return _authService.getCurrentUser()?.email;
+  }
+}

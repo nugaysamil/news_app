@@ -28,6 +28,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/back.png
   AssetGenImage get back => const AssetGenImage('assets/icons/back.png');
 
+  /// File path: assets/icons/back_button.png
+  AssetGenImage get backButton =>
+      const AssetGenImage('assets/icons/back_button.png');
+
   /// File path: assets/icons/bell.png
   AssetGenImage get bell => const AssetGenImage('assets/icons/bell.png');
 
@@ -78,6 +82,7 @@ class $AssetsIconsGen {
   List<AssetGenImage> get values => [
         group25,
         back,
+        backButton,
         bell,
         computerPerson,
         explore,

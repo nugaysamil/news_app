@@ -43,6 +43,15 @@ final class StringConstant {
   static final trendingIndonesia = 'Trending in Indonesia';
   static final trendingWorld = 'Trending in Worlds';
   static final savedPages = 'Saved Pages';
+  static final settings = 'Settings';
+  static final interesting = 'Interesting';
+  static final notifications = 'Notifications Center';
+  static final changePassword = 'Change Password';
+  static final language = 'Language';
+  static final faqs = 'FAQs';
+
+
+
 
 
 
