@@ -1,8 +1,10 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 part of '../profile_screen.dart';
 
-
 class _LogOutButton extends StatelessWidget {
-  const _LogOutButton();
+  final VoidCallback onPressed;
+
+  const _LogOutButton({required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +16,16 @@ class _LogOutButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30.0),
           ),
-          padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 140.0),
+          padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 145.0),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(Icons.logout, color: Colors.red),
             SizedBox(width: 8),
             Text(
-              'Log Out',
+              StringConstant.logOut,
               style: TextStyle(color: Colors.red),
             ),
           ],

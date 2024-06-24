@@ -49,6 +49,11 @@ final class StringConstant {
   static final changePassword = 'Change Password';
   static final language = 'Language';
   static final faqs = 'FAQs';
+  static final logOut = 'Log Out';
+  static final successfullyLoggedOut = 'Successfully logged out';
+
+
+
 
 
 

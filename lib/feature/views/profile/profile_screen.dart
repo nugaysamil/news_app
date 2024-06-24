@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/feature/view_model/login/login_view_model.dart';
+import 'package:news_app/feature/views/onboard/onboard_screen.dart';
+import 'package:news_app/feature/views/profile/mixin/profile_screen_mixin.dart';
 import 'package:news_app/product/generation/assets.gen.dart';
 import 'package:news_app/product/init/theme/app_font_style.dart';
 import 'package:news_app/product/utility/constant/string_constant.dart';
@@ -16,7 +18,7 @@ part 'image/user_circle_avatar.dart';
 part 'text/settings_list.dart';
 part 'button/log_out_button.dart';
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatelessWidget with ProfileScreenMixin {
   ProfileScreen({super.key});
   final LoginViewModel _loginViewModel = LoginViewModel();
 
@@ -39,7 +41,7 @@ class ProfileScreen extends StatelessWidget {
             Center(child: StatisticsRow()),
             _SettingsText(),
             _SettingsList(),
-            _LogOutButton()
+            _LogOutButton(onPressed: () => signOut(context))
           ],
         ),
       ),
